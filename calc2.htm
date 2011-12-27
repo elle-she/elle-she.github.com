@@ -1,0 +1,131 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+   
+ <head>
+   
+     <title>Калькулятор на JavaScript</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+
+        <script type="text/javascript">
+
+    
+        function calc1() {
+                        
+            var int count1       = document.getElementById("count1").value; 
+            var int count2       = document.getElementById("count1").value; 
+
+            var result       = document.getElementById("result"); 
+
+            var price = 0;
+            var rez   = 10;
+            
+                
+ 
+            
+            
+            rez = parseInt(count1,10)+parseInt(count2,10);
+              
+
+            
+            result.innerHTML = rez;
+        }
+
+         function calc2() {
+                        
+            var count1       = document.getElementById("count1"); 
+            var count2       = document.getElementById("count1"); 
+
+            var result       = document.getElementById("result"); 
+
+            var price = 0;
+            var rez   = 10;
+             
+                      
+            
+            rez = parseInt(count1.value,10)-parseInt(count2.value,10);
+              
+
+            
+            result.innerHTML = rez;
+        }
+    
+         function calc3() {
+                        
+            var count1       = document.getElementById("count1"); 
+            var count2       = document.getElementById("count1"); 
+
+            var result       = document.getElementById("result"); 
+
+            var price = 0;
+            var rez   = 10;
+             
+                      
+            
+            rez = parseInt(count1.value)*parseInt(count2.value);
+              
+
+            
+            result.innerHTML = rez;
+        }
+         
+        function calc4() {
+                        
+            var count1       = document.getElementById("count1"); 
+            var count2       = document.getElementById("count1"); 
+
+            var result       = document.getElementById("result"); 
+
+            var price = 0;
+            var rez   = 10;
+             
+                      
+            
+            rez = (parseInt(count1.value))/(parseInt(count2.value));
+              
+
+            
+            result.innerHTML = rez;
+        }   
+ 
+        </script>
+    </head>
+
+    <body background="img\back2.jpg">
+        <DIV ALIGN="center">
+        <h1>
+           Моя страничка 
+         </h1>
+         
+        <TABLE WIDTH="1000">
+        
+        <TR>
+        <TD ALIGN="center">  <A HREF="index.htm">Главная</A> </TD>
+        <TD ALIGN="center">  <A HREF="calc2.htm">Калькулятор</A> </TD>
+        
+        <TD ALIGN="center">  <A HREF="hobby.htm">Мои увлечения</A> </TD>
+        <TD ALIGN="center">  <A HREF="foto.htm">Фотографии</A> </TD>
+        <TD ALIGN="center"> 
+          <A HREF="kontact.htm">Контакты</A>
+         </TD>
+        </TR> 
+        </TABLE>  
+
+        <b> Калькулятор </b><br/>
+        
+
+        <input type="button" value="+" name="myButton" onClick="calc1()">
+        <input type="button" value="-" name="myButton" onClick="calc2()">
+        <input type="button" value="*" name="myButton" onClick="calc3()">
+        <input type="button" value="/" name="myButton" onClick="calc4()">
+
+        <br/>
+         <br/>
+
+         Первое число: <input type="text" id="count1" value="1" " />
+         Второе число: <input type="text" id="count2" value="2" " />
+        
+        <div>Результат: <span id="result">0</span> </div>
+
+    </body>
+</html>
+
