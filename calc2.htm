@@ -1,15 +1,11 @@
-<<<<<<< HEAD:calc2.htm
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
-   
- <head>
-   
-     <title>Калькулятор на JavaScript</title>
-
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Калькулятор на JavaScript</title>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-
         <script type="text/javascript">
 
-    
+       
         function calc1() {
                         
             var int count1       = document.getElementById("count1").value; 
@@ -49,13 +45,45 @@
             
             result.innerHTML = rez;
         }
-=======
-<html>
->>>>>>> 0a7f7bfbf3d4fc9fe5b876108680a9a78fbe195f:calc.html
     
-        <title>Калькулятор на JavaScript</title>
+         function calc3() {
+                        
+            var count1       = document.getElementById("count1"); 
+            var count2       = document.getElementById("count1"); 
+
+            var result       = document.getElementById("result"); 
+
+            var price = 0;
+            var rez   = 10;
+             
+                      
+            
+            rez = parseInt(count1.value)*parseInt(count2.value);
+              
+
+            
+            result.innerHTML = rez;
+        }
+         
+        function calc4() {
+                        
+            var count1       = document.getElementById("count1"); 
+            var count2       = document.getElementById("count1"); 
+
+            var result       = document.getElementById("result"); 
+
+            var price = 0;
+            var rez   = 10;
+             
+                      
+            
+            rez = (parseInt(count1.value))/(parseInt(count2.value));
+              
+
+            
+            result.innerHTML = rez;
+        }   
  
-<<<<<<< HEAD:calc2.htm
         </script>
     </head>
 
@@ -69,7 +97,7 @@
         
         <TR>
         <TD ALIGN="center">  <A HREF="index.htm">Главная</A> </TD>
-        <TD ALIGN="center">  <A HREF="calc2.htm">Калькулятор</A> </TD>
+        <TD ALIGN="center">  <A HREF="calc.html">Калькулятор</A> </TD>
         
         <TD ALIGN="center">  <A HREF="hobby.htm">Мои увлечения</A> </TD>
         <TD ALIGN="center">  <A HREF="foto.htm">Фотографии</A> </TD>
@@ -94,8 +122,6 @@
          Второе число: <input type="text" id="count2" value="2" " />
         
         <div>Результат: <span id="result">0</span> </div>
-=======
->>>>>>> 0a7f7bfbf3d4fc9fe5b876108680a9a78fbe195f:calc.html
 
+    </body>
 </html>
-
