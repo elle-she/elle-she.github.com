@@ -5,81 +5,29 @@
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
         <script type="text/javascript">
 
-       /*
-        * Функция подсчета 
-        */
-        function calc1() {
-                        
-            var int count1       = document.getElementById("count1").value; 
-            var int count2       = document.getElementById("count2").value; 
-
-            var result       = document.getElementById("result"); 
-
-            var price = 0;
-            var rez   = 10;
-                    
+         
+         function calc1()
+           {
+                
+                     
             
-            rez = count1+count2;
-            
-            
-            result = rez;
-        }
+           document.getElementById("rezult").value = Number(document.getElementById("count1").value)+Number(document.getElementById("count2").value);
+ 
+              }
 
          function calc2() {
                         
-            var count1       = document.getElementById("count1"); 
-            var count2       = document.getElementById("count1"); 
-
-            var result       = document.getElementById("result"); 
-
-            var price = 0;
-            var rez   = 10;
-             
-                      
-            
-            rez = parseInt(count1.value,10)-parseInt(count2.value,10);
-              
-
-            
-            result.innerHTML = rez;
+            document.getElementById("rezult").value = Number(document.getElementById("count1").value)-Number(document.getElementById("count2").value);
         }
     
          function calc3() {
                         
-            var count1       = document.getElementById("count1"); 
-            var count2       = document.getElementById("count1"); 
-
-            var result       = document.getElementById("result"); 
-
-            var price = 0;
-            var rez   = 10;
-             
-                      
-            
-            rez = parseInt(count1.value)*parseInt(count2.value);
-              
-
-            
-            result.innerHTML = rez;
+           document.getElementById("rezult").value = Number(document.getElementById("count1").value)*Number(document.getElementById("count2").value);
         }
          
         function calc4() {
                         
-            var count1       = document.getElementById("count1"); 
-            var count2       = document.getElementById("count1"); 
-
-            var result       = document.getElementById("result"); 
-
-            var price = 0;
-            var rez   = 10;
-             
-                      
-            
-            rez = (parseInt(count1.value))/(parseInt(count2.value));
-              
-
-            
-            result.innerHTML = rez;
+          document.getElementById("rezult").value = Number(document.getElementById("count1").value)/Number(document.getElementById("count2").value);
         }   
  
         </script>
@@ -116,10 +64,10 @@
         <br/>
          <br/>
 
-         Первое число: <input type="text" id="count1" value="1" " />
-         Второе число: <input type="text" id="count2" value="2" " />
+         Первое число: <input type="int" id="count1"/>
+         Второе число: <input type="int" id="count2"/>
         
-         Результат: <input type="text" id="rezult"/>
+         Результат: <input type="int" id="rezult"/>
 
     </body>
 </html>
