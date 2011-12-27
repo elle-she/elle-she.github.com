@@ -11,22 +11,18 @@
         function calc1() {
                         
             var int count1       = document.getElementById("count1").value; 
-            var int count2       = document.getElementById("count1").value; 
+            var int count2       = document.getElementById("count2").value; 
 
             var result       = document.getElementById("result"); 
 
             var price = 0;
             var rez   = 10;
+                    
             
-                
- 
+            rez = count1+count2;
             
             
-            rez = parseInt(count1,10)+parseInt(count2,10);
-              
-
-            
-            result.innerHTML = rez;
+            result = rez;
         }
 
          function calc2() {
@@ -123,7 +119,7 @@
          Первое число: <input type="text" id="count1" value="1" " />
          Второе число: <input type="text" id="count2" value="2" " />
         
-        <div>Результат: <span id="result">0</span> </div>
+         Результат: <input type="text" id="rezult"/>
 
     </body>
 </html>
